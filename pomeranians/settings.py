@@ -21,7 +21,7 @@ if os.path.isfile('env.py'):
 BASE_DIR = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-vannesha2021-pomsblog-rsx869runeb.ws-eu73.gitpod.io/,https://git.heroku.com/pomblog.git']
+CSRF_TRUSTED_ORIGINS = ['https://8000-vannesha2021-pomsblog-rsx869runeb.ws-eu73.gitpod.io',"https://git.heroku.com/pomblog.git"]
 
 
 # Quick-start development settings - unsuitable for production
@@ -37,8 +37,6 @@ DEBUG = True
 ALLOWED_HOSTS = ['pomblog.herokuapp.com', 'localhost']
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-
-ALLOWED_HOSTS = ['pomsblog.herokuapp.com', 'localhost']
 
 # Application definition
 
@@ -125,6 +123,8 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
+
+USE_I18N = True
 
 USE_I18N = True
 
