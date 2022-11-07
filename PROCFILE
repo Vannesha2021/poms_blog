@@ -1,1 +1,1 @@
-web: gunicorn travelblog.wsgi
+web: gunicorn pomeranians.wsgi
